@@ -1,0 +1,110 @@
+/* Reset de márgenes y padding */
+body, h1, p, ul {
+    margin: 0;
+    padding: 0;
+}
+
+/* Cabecera */
+header {
+    position: relative;
+    height: 180px;
+    background-image: url('backgroundwolf.jpg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+}
+
+/* Título en la parte superior izquierda */
+.titulo-izquierda h1 {
+    position: absolute;
+    top: 10px;
+    left: 20px;
+    color: darkblue;
+    font-size: 48px;
+    font-weight: bold;
+}
+
+/* Menú de navegación */
+nav ul {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px 15px;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+/* Enlaces de interés */
+.enlaces-interes {
+    position: absolute;
+    bottom: 10px;
+    left: 20px;
+    color: darkblue;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.enlaces-interes ul {
+    list-style: none;
+}
+
+.enlaces-interes ul li a {
+    color: darkgreen;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.enlaces-interes ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Texto inferior derecha */
+.texto-inferior-derecha {
+    position: absolute;
+    bottom: 10px;
+    right: 20px;
+    color: white;
+    font-size: 14px;
+    font-style: italic;
+}
+
+/* Contenido principal */
+main {
+    padding: 20px;
+    text-align: center;
+    font-size: 16px;
+}
+
+/* Pie de página */
+footer {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background-color: #333;
+    padding: 10px 20px;
+    border-radius: 5px;
+}
+
+
