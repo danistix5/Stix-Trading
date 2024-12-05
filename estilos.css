@@ -7,11 +7,12 @@ body, h1, p, ul {
 /* Cabecera */
 header {
     position: relative;
-    height: 180px;
+    height: 350px; /* Se aumenta la altura del encabezado */
     background-image: url('backgroundwolf.jpg');
     background-size: cover;
     background-position: center;
     color: white;
+    padding-top: 80px; /* Ajusta el texto para que no se solape con la imagen */
 }
 
 /* Título en la parte superior izquierda */
@@ -52,18 +53,51 @@ nav ul li a:hover {
     background-color: rgba(255, 255, 255, 0.2);
 }
 
+/* Contenido principal */
+.contenido-principal {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+    height: 50vh; /* La mitad de la página */
+}
+
+.texto-izquierda {
+    width: 50%;
+    padding-right: 20px;
+    margin-top: 50px; /* Añadido para mover el texto hacia abajo */
+}
+
+.texto-izquierda p {
+    font-size: 18px;
+    line-height: 1.6;
+}
+
+/* Imagen a la derecha */
+.imagen-derecha {
+    width: 50%;
+    padding-left: 20px;
+}
+
+.imagen-derecha img {
+    width: 100%;
+    height: auto;
+}
+
 /* Enlaces de interés */
 .enlaces-interes {
-    position: absolute;
-    bottom: 10px;
-    left: 20px;
-    color: darkblue;
-    padding: 10px;
-    border-radius: 5px;
+    padding-left: 20px;
+    display: flex;
+    flex-direction: column; /* Apilamos los enlaces uno encima del otro */
+    align-items: center;
 }
 
 .enlaces-interes ul {
     list-style: none;
+}
+
+.enlaces-interes ul li {
+    margin: 10px 0; /* Espacio entre los enlaces */
 }
 
 .enlaces-interes ul li a {
@@ -76,35 +110,23 @@ nav ul li a:hover {
     text-decoration: underline;
 }
 
-/* Texto inferior derecha */
-.texto-inferior-derecha {
-    position: absolute;
-    bottom: 10px;
-    right: 20px;
-    color: white;
-    font-size: 14px;
-    font-style: italic;
-}
-
-/* Contenido principal */
-main {
+/* Texto debajo de la imagen y texto principal */
+.pie-de-pagina {
+    text-align: center;
     padding: 20px;
-    text-align: center;
     font-size: 16px;
+    color: white;
+    background-color: #333;
+    margin-top: 30px;
 }
 
-/* Pie de página */
+/* Footer */
 footer {
-    position: absolute;
-    bottom: 10px;
-    left: 50%;
-    transform: translateX(-50%);
     text-align: center;
+    padding: 20px;
     font-size: 14px;
     color: white;
     background-color: #333;
-    padding: 10px 20px;
-    border-radius: 5px;
+    margin-top: 50px; /* Se asegura de que el pie de página no se solape */
 }
-
 
